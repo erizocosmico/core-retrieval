@@ -12,3 +12,4 @@ CREATE TABLE IF NOT EXISTS repositories (
 );
 
 CREATE INDEX IF NOT EXISTS idx_repositories_endpoints on "repositories" USING GIN ("endpoints");
+CREATE INDEX IF NOT EXISTS idx_repositories_status on "repositories" ("status");
